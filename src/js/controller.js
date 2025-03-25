@@ -45,7 +45,7 @@ const controlRecipes = async function () {
     // // 3) Updating Bookmarks view
     // bookmarkView.update(model.state.bookmarks);
   } catch (err) {
-    console.error(err);
+    // console.error(err);
     recipeView.renderError();
   }
 };
@@ -138,7 +138,7 @@ const controlAddRecipe = async function (newRecipe) {
     }, MODAL_CLOSE_SEC * 1000);
     
   } catch (err) {
-    console.error(err);
+    // console.error(err);
     addRecipeView.renderError(err.message);
   }
 };
